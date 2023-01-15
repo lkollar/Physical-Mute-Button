@@ -28,9 +28,9 @@ void loop()
     }
     M5.dis.setBrightness(100);
     if (muted) {
-      M5.dis.fillpix(CRGB::Green);
+      M5.dis.fillpix(CRGB::Red);
     } else {
-      M5.dis.fillpix(CRGB::Black);
+      M5.dis.fillpix(CRGB::Green);
     }
   } else {
     muted = false;
