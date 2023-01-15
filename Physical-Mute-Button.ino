@@ -20,9 +20,9 @@ void loop()
   if(bleKeyboard.isConnected()) {
     if (M5.Btn.wasPressed()) {
       muted = !muted;
-      bleKeyboard.press(KEY_LEFT_CTRL);
       bleKeyboard.press(KEY_LEFT_SHIFT);
-      bleKeyboard.press('M');
+      bleKeyboard.press(KEY_LEFT_GUI);
+      bleKeyboard.press('A');
       delay(100);
       bleKeyboard.releaseAll();
     }
